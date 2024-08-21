@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.manu{
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(116, 227, 239);
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4rem;
+    align-items: center;
+}
+.icon {
+    display: flex; /* ใช้ flexbox สำหรับการจัดเรียงภาพ */
+    justify-content: center; /* จัดภาพให้อยู่กลางแนวนอน */
+    align-items: center; /* จัดภาพให้อยู่กลางแนวตั้ง */
+    gap: 20px; /* เพิ่มระยะห่างระหว่างภาพ (ถ้าต้องการ) */
+    height: 50vh; /* ตั้งค่าความสูงของ container ให้เต็มหน้าจอ (สามารถปรับตามต้องการ) */
+}
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+.icon img {
+    max-width: 100px;
+    height: auto;
+    cursor: pointer; /* เปลี่ยนเคอร์เซอร์เมื่อชี้ที่รูปภาพ */
+    transition: transform 0.3s; /* เพิ่มเอฟเฟกต์การเคลื่อนไหว */
+}
+.icon img:hover {
+    transform: scale(1.1); /* ขยายรูปภาพเล็กน้อยเมื่อชี้ */
+}
